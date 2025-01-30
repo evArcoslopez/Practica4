@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Jugadores de Fútbol ⚽</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚽ Buscador de deportistas</h1>
+            <button class="team-btn" id="realMadridBtn">Mostrar jugadores Arsenal</button>
+        </div>
+
+        <div class="search-section">
+            <form class="search-form" id="searchForm">
+                <div class="input-group">
+                    <label>Nombre del Jugador:</label>
+                    <input type="text" id="playerName" placeholder="Ej: Messi, Ronaldo...">
+                </div>
+                <div class="input-group">
+                    <label>País:</label>
+                    <input type="text" id="playerCountry" placeholder="Ej: Spain">
+                </div>
+                <div class="button-group">
+                    <button type="button" class="search-btn" id="searchBtn">Buscar</button>
+                    <button type="button" class="clear-btn" id="clearBtn">Limpiar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="loading">Cargando jugadores...</div>
+        <div class="players-grid" id="results"></div>
+        <div class="error" id="error"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
